@@ -2,14 +2,14 @@
  * Работа с Коллекцией (массивом обьектов)
  */
 
-const friends = [
-    { name: 'Mango', online: false },
-    { name: 'Kiwi', online: true },
-    { name: 'Poly', online: true },
-    { name: 'Ajax', online: false },
-];
+// const friends = [
+//     { name: 'Mango', online: false },
+//     { name: 'Kiwi', online: true },
+//     { name: 'Poly', online: true },
+//     { name: 'Ajax', online: false },
+// ];
 
-console.table(friends);
+// console.table(friends);
 
 // for (const friend of friends) {
 //     console.log(friend);
@@ -95,21 +95,32 @@ console.table(friends);
 
 // console.log(getOfflineFriends(friends));
 
-const getFriendsByOnlineStatus = function (allFriends) {
-    const friendsByStatus = {
-        online: [],
-        offline: []
-    }
+// const getFriendsByOnlineStatus = function (allFriends) {
+//     const friendsByStatus = {
+//         online: [],
+//         offline: []
+//     }
 
-    for (const friend of friends) {
-        if (friend.online) {
-            friendsByStatus.online.push(friend);
-        }
-    }
+//     for (const friend of friends) {
+//         if (friend.online) {
+//             friendsByStatus.online.push(friend);
+//         } else {
+//             friendsByStatus.offline.push(friend);
+//         }
+//     }
 
-    return friendsByStatus;
-}
+//     return friendsByStatus;
+// };
 
 
 
-console.log(getFriendsByOnlineStatus(friends));
+// console.log(getFriendsByOnlineStatus(friends));
+
+// const x = {
+//     a: 1,
+//     b: 2,
+//     c: 50,
+//     d: 100,
+// }
+
+// console.log(Object.keys(x).length);
