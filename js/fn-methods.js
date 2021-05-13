@@ -24,32 +24,32 @@
 // showThis();
 
 
-const changeColor = function (color) {
-    console.log('changeColor -> this', this);
-    // this.color = color;
-};
+// const changeColor = function (color) {
+//     console.log('changeColor -> this', this);
+//     // this.color = color;
+// };
 
-const hat = {
-    color: 'black',
-};
+// const hat = {
+//     color: 'black',
+// };
 
-// changeColor.call(hat, 'orange');
-// console.log(hat);
+// // changeColor.call(hat, 'orange');
+// // console.log(hat);
 
-const sweater = {
-    color: 'green',
-};
+// const sweater = {
+//     color: 'green',
+// };
 
-// console.log(sweater);
+// // console.log(sweater);
 
 
-/**
- * bind
- */
+// /**
+//  * bind
+//  */
 
-const changeHatColor = changeColor.bind(hat);
-const changeSweatertColor = changeColor.bind(sweater);
+// const changeHatColor = changeColor.bind(hat);
+// const changeSweatertColor = changeColor.bind(sweater);
 
-changeColor(); //undefined
-changeHatColor();//bind делает копию функций с навсегда привязанным контекстом
-changeSweatertColor();// bind - привязка
+// changeColor(); //undefined
+// changeHatColor();//bind делает копию функций с навсегда привязанным контекстом
+// changeSweatertColor();// bind - привязка
